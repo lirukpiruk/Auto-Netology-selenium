@@ -101,7 +101,7 @@ public class DebitCardOrderFormTest {
         assertEquals(expected, actual);
     }
 
-    /*@Test
+    @Test
     void shouldSubmitFormWithNameWithYo() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Пётр Пупкин");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79112223344");
@@ -112,7 +112,7 @@ public class DebitCardOrderFormTest {
         String actual = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
 
         assertEquals(expected, actual);
-    }*/
+    }
 
     @Test
     void shouldSetErrorMsgIfNameEmpty() {
@@ -226,7 +226,7 @@ public class DebitCardOrderFormTest {
         assertEquals(expected, actual);
     }
 
-    /*@Test
+    @Test
     void shouldNotValidateIfJustName() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Василий");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79112223344");
@@ -263,6 +263,6 @@ public class DebitCardOrderFormTest {
         Boolean actual = driver.findElement(By.cssSelector("[data-test-id=name].input_invalid")).isDisplayed();
 
         assertEquals(expected, actual);
-    }*/
+    }
 
 }
